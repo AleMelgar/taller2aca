@@ -29,8 +29,23 @@ public class Main {
                 case 2:
                     gestor.listar();
                     break;
-                case 3: System.out.println("(Update - próximamente)"); break;
-                case 4: System.out.println("(Delete - próximamente)"); break;
+                case 3:
+                    System.out.print("ID del producto a actualizar: ");
+                    int idActualizar = scanner.nextInt();
+                    scanner.nextLine();
+                    System.out.print("Nuevo nombre: ");
+                    String nuevoNombre = scanner.nextLine();
+                    System.out.print("Nuevo precio: ");
+                    double nuevoPrecio = scanner.nextDouble();
+                    scanner.nextLine();
+                    gestor.actualizar(idActualizar, nuevoNombre, nuevoPrecio);
+                    break;
+                case 4:
+                    System.out.print("ID del producto a eliminar: ");
+                    int idEliminar = scanner.nextInt();
+                    scanner.nextLine();
+                    gestor.eliminar(idEliminar);
+                    break;
                 case 0: System.out.println("Saliendo..."); break;
                 default: System.out.println("Opción inválida.");
             }
