@@ -26,7 +26,9 @@ public class Main {
                     scanner.nextLine();
                     gestor.agregar(nombre, precio);
                     break;
-                case 2: System.out.println("(Read - próximamente)"); break;
+                case 2:
+                    gestor.listar();
+                    break;
                 case 3: System.out.println("(Update - próximamente)"); break;
                 case 4: System.out.println("(Delete - próximamente)"); break;
                 case 0: System.out.println("Saliendo..."); break;

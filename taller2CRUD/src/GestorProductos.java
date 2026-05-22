@@ -9,4 +9,15 @@ public class GestorProductos {
         productos.add(p);
         System.out.println("✔ Producto agregado: " + p);
     }
+
+    public void listar() {
+        if (productos.isEmpty()) {
+            System.out.println("No hay productos registrados.");
+            return;
+        }
+        System.out.println("\n=== Lista de Productos ===");
+        for (Producto p : productos) {
+            System.out.println(p);
+        }
+    }
 }
