@@ -1,0 +1,14 @@
+# MkDocs
+site/
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Java build output
+taller2CRUD/out/
